@@ -27,18 +27,21 @@ header h1 {
     font-size: 36px;
     margin: 0
 }
-/* remove underline from link text */
+
 header a {
+    /* remove underline from link text */
     text-decoration: none;
     color: #fce138;
     font-weight: bold;
 }
 header nav ul {
+    /* allows ul items to wrap, removes bullet notes */
     display: flex;
     flex-wrap: wrap;
     list-style: none;
 }
 header nav ul li {
+    /* set padding so links are spaced apart */
     padding: 10px 15px;
     font-size: 20px;
 }
@@ -57,11 +60,12 @@ header nav ul li {
         text-align: center;
     }
     header nav{
+        /* makes nav fill out full header width */
         margin-top: 20px;
         width: 100%;
     }
     header nav ul {
-        /* width: 100%; */
+        /* center everything inside the ul element */
         justify-content: center;
     }
 }
