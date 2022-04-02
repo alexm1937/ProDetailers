@@ -1,0 +1,71 @@
+/* set style across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    /* set header to stick to top, webkit sticky for older browsers */
+    position: -webkit-sticky;
+    position: sticky;
+    /* sets top position to 0/top)  */
+    top: 0;
+    /* top/bot padding 20px, l+r 30px */
+    padding: 20px 30px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* higher z index on top of stack */
+    z-index: 99;
+    text-shadow: 0 0 10px rgba(0,0,0,1.5);
+    background-image: url('../assets/imgs/bg-img-2.jpg');
+    background-size: cover;
+    /* background-position: 0%; */
+}
+header h1 {
+    font-size: 36px;
+    margin: 0
+}
+
+header a {
+    /* remove underline from link text */
+    text-decoration: none;
+    color: #fce138;
+    font-weight: bold;
+}
+header nav ul {
+    /* allows ul items to wrap, removes bullet notes */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header nav ul li {
+    /* set padding so links are spaced apart */
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav{
+        /* makes nav fill out full header width */
+        margin-top: 20px;
+        width: 100%;
+    }
+    header nav ul {
+        /* center everything inside the ul element */
+        justify-content: center;
+    }
+}
