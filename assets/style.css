@@ -42,3 +42,26 @@ header nav ul li {
     padding: 10px 15px;
     font-size: 20px;
 }
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+    header {
+        justify-content: center;
+    }
+    header h1{
+        width: 100%;
+        text-align: center;
+    }
+    header nav{
+        margin-top: 20px;
+        width: 100%;
+    }
+    header nav ul {
+        /* width: 100%; */
+        justify-content: center;
+    }
+}
