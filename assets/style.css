@@ -18,20 +18,27 @@ header {
     flex-wrap: wrap;
     /* higher z index on top of stack */
     z-index: 99;
+    text-shadow: 0 0 10px rgba(0,0,0,1.5);
+    background-image: url('../assets/imgs/bg-img-2.jpg');
+    background-size: cover;
+    /* background-position: 0%; */
 }
 header h1 {
-    font-weight: bold;
     font-size: 36px;
-    color: #5F9EA0;
     margin: 0
 }
 /* remove underline from link text */
 header a {
     text-decoration: none;
-    color: #5F9EA0
+    color: #fce138;
+    font-weight: bold;
 }
 header nav ul {
-    justify-content: space-between;
-    align-items: center;
-    
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header nav ul li {
+    padding: 10px 15px;
+    font-size: 20px;
 }
