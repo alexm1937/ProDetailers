@@ -1,0 +1,37 @@
+/* set style across all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    /* set header to stick to top, webkit sticky for older browsers */
+    position: -webkit-sticky;
+    position: sticky;
+    /* sets top position to 0/top)  */
+    top: 0;
+    /* top/bot padding 20px, l+r 30px */
+    padding: 20px 30px;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* higher z index on top of stack */
+    z-index: 99;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #5F9EA0;
+    margin: 0
+}
+/* remove underline from link text */
+header a {
+    text-decoration: none;
+    color: #5F9EA0
+}
+header nav ul {
+    justify-content: space-between;
+    align-items: center;
+    
+}
