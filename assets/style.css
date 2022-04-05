@@ -25,10 +25,12 @@ header {
     /* higher z index on top of stack */
     z-index: 99;
     text-shadow: 0 0 10px rgba(0,0,0,1.5);
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
 }
 header h1 {
     font-size: 36px;
-    margin: 0
+    margin: 0;
 }
 header a {
     /* remove underline from link text */
@@ -46,6 +48,8 @@ header nav ul li {
     /* set padding so links are spaced apart */
     padding: 10px 15px;
     font-size: 20px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
 }
 
 
@@ -57,8 +61,10 @@ main {
     padding: 10px;
     border-radius: 10px;
     width: 30vw;
-    background-color: #024e76;
-    color: #fce138;
+    background-color: rgba(252,225,56,0.8);
+    color: #024e76;
+    border: #fce138 solid 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
     z-index: 98;
 }
 
