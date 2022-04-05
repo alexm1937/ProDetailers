@@ -61,17 +61,24 @@ main {
     color: #fce138;
     z-index: 98;
 }
+
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+}
 .slideshow {
     width: 600px;
     height: 337px;
     background: url('../assets/imgs/bg-img-1.jpg');
     /* background-size: cover; */
-    animation: slide 20s infinite;
+    animation: slide 25s ease-in-out 10s infinite;
     transition: 1s;
-    margin-left: 100px;
+    margin: auto;
     margin-top: 50px;
     border: #fce138 solid 3px;
     border-radius: 10px;
+    /* position is set to relative so we can add a text overlay later. */
+    position: relative;
 }
 @keyframes slide {
     /* 33% {
@@ -86,6 +93,29 @@ main {
     100% {
         background: url('../assets/imgs/bg-img-1.jpg');
     }
+}
+.form {
+    background-color: rgba(252,225,56,0.8);
+    color: #024e76;
+    border: #fce138 solid 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    /* width: min-content; */
+    width: 30vw;
+}
+.form p {
+    margin: 5px 0 15px 0;
+}
+.form input {
+    border: #024e76 1px solid;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 7px 15px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 
@@ -113,6 +143,10 @@ main {
         margin: auto;
         margin-top: 25px;
     }
+    .form{
+        margin-top: 25px;
+        width: min-content;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -120,7 +154,6 @@ main {
         width: 400px;
         height: 225px;
         background: url('../assets/imgs.med/bg-img-1.jpg');
-        margin: auto;
         margin-top: 20px;
     }
     @keyframes slide {
@@ -143,8 +176,6 @@ main {
         width: 250px;
         height: 141px;
         background: url('../assets/imgs.mini/bg-img-1.jpg');
-        margin: auto;
-        margin-top: 20px;
     }
     @keyframes slide {
         /* 33% {
@@ -159,5 +190,8 @@ main {
         100% {
             background: url('../assets/imgs.mini/bg-img-1.jpg');
         }
+    }
+    .form{
+        padding: 5px;
     }
 }
