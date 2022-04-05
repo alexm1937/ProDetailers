@@ -30,7 +30,6 @@ header h1 {
     font-size: 36px;
     margin: 0
 }
-
 header a {
     /* remove underline from link text */
     text-decoration: none;
@@ -50,8 +49,46 @@ header nav ul li {
 }
 
 
+main {
+    padding: 20px;
+    height: max-content;
+}
 
+.welcome {
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+    background-color: #024e76;
+    color: #fce138;
+    z-index: 98;
+}
 
+.slideshow {
+    width: 600px;
+    height: 337px;
+    background: url('../assets/imgs/bg-img-1.jpg');
+    background-size: cover;
+    animation: slide 30s infinite;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: #fce138 solid 3px;
+    border-radius: 10px;
+
+}
+@keyframes slide {
+    25% {
+        background: url('../assets/imgs/bg-img-3.jpg');
+    }
+    50% {
+        background: url('../assets/imgs/bg-img-4.jpg');
+    }
+    75% {
+        background: url('../assets/imgs/bg-img-5.jpg');
+    }
+    100% {
+        background: url('../assets/imgs/bg-img-1.jpg');
+    }
+}
 
 
 @media screen and (max-width: 980px) {
@@ -70,5 +107,25 @@ header nav ul li {
     header nav ul {
         /* center everything inside the ul element */
         justify-content: center;
+    }
+
+    /* .welcome {
+        width: min-content;
+    } */
+
+    /* .slideshow {
+        width: 450px;
+        height: 253;
+        position: relative;
+        bottom: 200px;
+
+    } */
+}
+
+@media screen and (max-width: 450px) {
+    .slideshow {
+        width: 250;
+        height: 141;
+
     }
 }
