@@ -16,9 +16,10 @@ router.get('/reviews', (req, res) => {
         attributes: [
             'id',
             'title',
-            'content', 
-            'created_at'
-        ]
+            'content',
+            'user_id'
+        ],
+        include: [ { model: User, attributes: ['email'] } ]
     }).then(data => {
         const reviews = data;
         res.render('reviews', {

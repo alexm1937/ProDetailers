@@ -4,7 +4,7 @@ const { User, Review } = require('../../models');
 
 router.get('/', (req, res) => {
     Review.findAll({
-        attributes: ['id', 'title', 'content', 'user_id', 'created_at'],
+        attributes: ['id', 'title', 'content', 'user_id'],
         //sorts by created_at in descending order starting at newest
         order: [['created_at', 'DESC']],
         //incluse User relation 
