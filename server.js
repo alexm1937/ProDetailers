@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 //middleware
 //set public dir to static public
 app.use(express.static(__dirname + '/public'));
-
+app.use(express.json());
 
 //routes
 app.use(routes);
