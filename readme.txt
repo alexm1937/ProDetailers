@@ -1,3 +1,6 @@
+View my newest app live at https://prodetail.herokuapp.com/
+
+BETTER README COMING SOON
 current dependencies:
 
 express (set up server)
