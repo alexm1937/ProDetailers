@@ -31,4 +31,8 @@ router.get('/reviews', (req, res) => {
     });
 });
 
+router.get('/what-we-do', (req, res) => {
+    res.render('what-we-do');
+});
+
 module.exports = router;
